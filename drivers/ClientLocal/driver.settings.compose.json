@@ -2,5 +2,13 @@
   {
     "$extends": "Polling_Interval",
     "id": "Polling_Interval"
+  },
+  {
+    "$extends": "Auth_Token",
+    "id": "Auth_Token"
+  },
+  {
+    "$extends": "Host",
+    "id": "Host"
   }
 ]

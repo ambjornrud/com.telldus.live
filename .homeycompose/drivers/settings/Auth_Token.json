@@ -1,0 +1,13 @@
+{
+  "id": "Auth_Token",
+  "type": "textarea",
+  "label": {
+    "en": "Secret auth token",
+    "no": "Hemmelig auth token"
+  },
+  "value": "Token kommer her...",
+  "hint": {
+    "en": "Your secret token is showned here.",
+    "no": "Ditt hemmelige auth token vises her."
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "Host",
+    "type": "text",
+    "label": {
+      "en": "Hostname or IP-address",
+      "no": "Hostnavn eller IP-adresse"
+    },
+    "value": "",
+    "hint": {
+      "en": "Hostname or ip-address to your gateway is showned here.",
+      "no": "Hostnavn eller ip-adressen til din gateway vises her."
+    }
+  }

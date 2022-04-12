@@ -257,6 +257,32 @@
             "en": "Polling interval (seconds)",
             "no": "Polle intervall (sekunder)"
           }
+        },
+        {
+          "id": "Auth_Token",
+          "type": "textarea",
+          "label": {
+            "en": "Secret auth token",
+            "no": "Hemmelig auth token"
+          },
+          "value": "Token kommer her...",
+          "hint": {
+            "en": "Your secret token is showned here.",
+            "no": "Ditt hemmelige auth token vises her."
+          }
+        },
+        {
+          "id": "Host",
+          "type": "text",
+          "label": {
+            "en": "Hostname or IP-address",
+            "no": "Hostnavn eller IP-adresse"
+          },
+          "value": "",
+          "hint": {
+            "en": "Hostname or ip-address to your gateway is showned here.",
+            "no": "Hostnavn eller ip-adressen til din gateway vises her."
+          }
         }
       ]
     },
