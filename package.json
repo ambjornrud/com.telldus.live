@@ -3,7 +3,12 @@
   "version": "1.0.1",
   "description": "Telldus Live app for Athom Homey",
   "main": "app.js",
+  "engines": {
+    "node": ">=12.16.1"
+  },
   "scripts": {
+    "lint": "eslint --fix app.js lib drivers",
+    "pretest": "eslint --ignore-path .gitignore app.js lib drivers test",
     "run": "homeyConfig compose && athom project --run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +26,9 @@
     "debug": "^3.1.0",
     "node-fetch": "^2.6.0",
     "oauth-1.0a": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-athom": "^2.1.0"
   }
 }
