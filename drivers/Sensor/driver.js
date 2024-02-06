@@ -41,7 +41,7 @@ module.exports = class SensorDriver extends Homey.Driver {
                                 } else if (val.unit === 'V' || val.scale == 4) {
                                     capabilities.push('measure_voltage');
                                 } else if (val.unit === 'A' || val.scale == 5) {
-                                    capabilities.push('measure_voltage');
+                                    capabilities.push('measure_current');
                                 // } else if (val.unit === '' || val.scale == 6) { // Power Factor
                                 //     capabilities.push('??'); // Finnes ikke på Homey!
                                 }
