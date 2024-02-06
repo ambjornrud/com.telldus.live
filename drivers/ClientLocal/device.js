@@ -47,6 +47,7 @@ module.exports = class ClientLocalDevice extends BaseClientDevice {
 
     async fetchSensorValues() {
         const sensors = await this._api.listSensors({});
+//        this.log("sensors: " + JSON.stringify(sensors, null, 2));
         Homey.app.sensorValues(sensors);
     }
 
