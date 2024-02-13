@@ -50,7 +50,7 @@ module.exports = class SensorDevice extends BaseDevice {
 
         if (value !== this.getCapabilityValue(capability)) {
             this.setCapabilityValue(capability, value).catch(err => this.log(`error setting ${capability} capability`, err));
-            this.log(`${sensor.name} ${capability} => ${value} UPDATED`);
+//            this.log(`${sensor.name} ${capability} => ${value} UPDATED`);
         }
     }
 };

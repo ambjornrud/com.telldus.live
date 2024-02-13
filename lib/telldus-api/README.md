@@ -1,6 +1,6 @@
 # telldus-api
 
-Node.js interface for [Telldus Live API](http://api.telldus.com/) and [Telldus Local API](https://developer.telldus.com/blog/2016/05/24/local-api-for-tellstick-znet-lite-beta-now-in-public-beta). Since their APIs are similar, I added support for both. All API methods are promise based. Both LiveApi and LocalApi inherit from the same class Api which has the same methods. However not all methods are implemented or make sense on LocalApi.
+Node.js interface for [Telldus Live API](https://pa-api.telldus.com/) and [Telldus Local API](https://developer.telldus.com/blog/2016/05/24/local-api-for-tellstick-znet-lite-beta-now-in-public-beta). Since their APIs are similar, I added support for both. All API methods are promise based. Both LiveApi and LocalApi inherit from the same class Api which has the same methods. However not all methods are implemented or make sense on LocalApi.
 
 ## Install
 ⚠️ Requires node 8.3 or greater.
@@ -10,7 +10,7 @@ npm install telldus-api
 
 # Live usage
 - You will need a Telldus Live account with configured devices and and OAuth tokens.
-- Log in to your Live account, go to http://api.telldus.com/ and `Generate a private token for my user only`.
+- Log in to your Live account, go to https://pa-api.telldus.com/ and `Generate a private token for my user only`.
 
 ```
 const { LiveApi } = require('telldus-api');

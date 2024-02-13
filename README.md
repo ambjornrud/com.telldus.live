@@ -13,7 +13,7 @@ You will need a "Telldus Live" account, and "OAuth tokens".
 
 To create OAuth tokens:
 
-- Go to http://api.telldus.com/keys/index
+- Go to https://pa-api.telldus.com/keys/index
 - Click on "Generate a private token for my user only", and follow the instructions.
 
 Then install the "Telldus Live" device from the app.  
