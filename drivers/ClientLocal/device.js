@@ -37,12 +37,14 @@ module.exports = class ClientLocalDevice extends BaseClientDevice {
         if (online !== this.getCapabilityValue('online')) {
             this.setCapabilityValue('online', online).catch(err => this.log('error setting online capability', err));
             if (online) {
-                Homey.app.triggerClientOnline.trigger(this, {
+                this.homey.flow.getDeviceTriggerCard('client_online')
+                  .trigger(this, {
                     clientId: this.getId(),
                     clientName: this.getName(),
                 }, null);
             } else {
-                Homey.app.triggerClientOffline.trigger(this, {
+                this.homey.flow.getDeviceTriggerCard('client_offline')
+                  .trigger(this, {
                     clientId: this.getId(),
                     clientName: this.getName(),
                 }, null);
@@ -54,13 +56,13 @@ module.exports = class ClientLocalDevice extends BaseClientDevice {
     async fetchSensorValues() {
         const sensors = await this._api.listSensors({});
         this.log("sensors: " + JSON.stringify(sensors, null, 2));
-        Homey.app.sensorValues(sensors);
+        this.homey.app.sensorValues(sensors);
     }
 
     async fetchDevicesValues() {
         const devices = await this._api.listDevices({});
 //    this.log("devices: " + JSON.stringify(devices, null, 2));
-        Homey.app.deviceValues(devices);
+        this.homey.app.deviceValues(devices);
     }
 
 };
